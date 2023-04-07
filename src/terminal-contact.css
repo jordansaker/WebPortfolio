@@ -27,7 +27,7 @@
     }
 
 }
-@keyframes move-cover-index { 
+@keyframes move-cover-contact { 
     30% {
         transform: scaleX(0);
     }
@@ -74,17 +74,17 @@
     animation: move 4s linear forwards, blink 0.8s linear infinite;
 }
 .cover-anim {
-    animation: move-cover-index 4s linear forwards;
+    animation: move-cover-contact 4s linear forwards;
 }
 
 .terminal-background:hover {
     height: 40rem;
 }
 /* Terminal content */
-.hidden section, main > section, main {
+.hidden section, main > section {
     display: flex;
 }
-main > section, main {
+main > section {
     padding: 0rem 0 4rem;
     justify-content: center;
     align-content: center;
@@ -115,5 +115,8 @@ main > section, main {
 
 main > section {
     padding: 10rem;
-    height: 100%;
+}
+main > article > p {
+    padding-top: 2rem;
+    margin-top: 4rem;
 }
