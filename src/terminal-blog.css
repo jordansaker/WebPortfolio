@@ -1,0 +1,82 @@
+/* Keyframes */
+@keyframes blink {
+    0% {
+        background-color: #33FF33;
+    }
+    45% {
+        background-color: #33FF33;
+    }
+    50% {
+        background: #282828;
+        opacity: 0.7;
+    }
+    95% {
+        background: #282828;
+        opacity: 0.7;
+    }
+    100% {
+        background-color: #33FF33;
+    }
+}
+
+@keyframes move { 
+    30% {
+        transform: translateX(5rem);
+    }
+    100% {
+        transform: translateX(5rem);
+    }
+
+}
+@keyframes move-cover-blog { 
+    30% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+/* "ls blog" cursor placement */
+.cmd {
+    left: 9.5rem;
+}
+.cursor, .cursor-stationary {
+    background-color: #33FF33;
+    width: 0.5rem;
+    height: 1.3rem;
+    z-index: 3;
+    top: 1.1rem;
+}
+.cursor-stationary {
+    animation: blink 0.8s linear infinite;
+    left: 14rem;
+}
+.cover {
+    width: 5rem;
+    height: 1.2rem;
+    background-color: #282828;
+    z-index: 2;
+    top: 1.1rem;
+    transform-origin: right;
+}
+.terminal-background:hover .cursor-stationary, .hidden {
+    display: none;
+}
+.terminal-background:hover .hidden {
+    display: block;
+    z-index: 4;
+    top: -3.35rem; /* 2.16rem */
+}
+.terminal-background:hover .hidden, .inputline-dir {
+    position: relative;
+}
+.cursor-anim {
+    animation: move 5s linear forwards, blink 0.8s linear infinite;
+}
+.cover-anim {
+    animation: move-cover-blog 5s linear forwards;
+}
+
+.terminal-background:hover {
+    height: 10rem;
+}
