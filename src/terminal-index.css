@@ -84,4 +84,9 @@
 .hidden section a p {
     padding: 1.5rem;
     font-size: 1.5rem;
+    color: #fff;
+}
+.hidden section a p:hover {
+    color: #33FF33;
+    opacity: 0.7;
 }
