@@ -78,7 +78,7 @@
 }
 
 .terminal-background:hover {
-    height: 35rem;
+    height: 40rem;
 }
 /* Terminal content */
 .hidden section, main > section, main {
@@ -110,7 +110,7 @@ main > section, main {
     font-size: 1.5rem;
 }
 .hidden section a span {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 main > section {
