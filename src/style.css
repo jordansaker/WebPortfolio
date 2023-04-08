@@ -101,7 +101,7 @@ details nav a {
 }
 
 /* Main component */
-main, figure, .page-indicator, main article ul, main article section {
+main, figure, .page-indicator, main article ul, main article section, main > article > section > div {
     display: flex;
 }
 main {
@@ -173,11 +173,10 @@ main > p {
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
-main article img {
+main > article > section > img {
     max-width: 60%;
-    margin: 0 0 1rem 20%;
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 /* Main component blog pages */
 main article article h2, main article article p {
