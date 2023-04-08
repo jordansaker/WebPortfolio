@@ -101,7 +101,7 @@ details nav a {
 }
 
 /* Main component */
-main, figure {
+main, figure, .page-indicator {
     display: flex;
 }
 main {
@@ -133,7 +133,7 @@ main {
 }
 .hero p, main article > p {
     line-height: 1.45;
-    letter-spacing: 0.05rem;
+    word-spacing: 0.25rem;
 }
 main > article > p {
     padding-top: 2rem;
@@ -148,9 +148,7 @@ main > article > p, main > article > h2{
     margin: 1.25rem 0;
 }
 main > section {
-    padding: 10rem 10rem 14rem;
-    justify-content: center;
-    align-content: center;
+    padding: 3rem 0 0;
 }
 /* Main component blog pages */
 main article article h2, main article article p {
@@ -158,7 +156,7 @@ main article article h2, main article article p {
 } 
 main article article h2 {
     font-size: 1.8rem;
-    padding: 1.2rem 1.5rem 1rem;
+    padding: 0rem 1.5rem 1rem;
     letter-spacing: 0.2rem;
     margin-top: 6rem;
 }
@@ -171,10 +169,34 @@ main article figure img {
     max-width: 90%;
 }
 figure {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
     margin-top: 4rem;
+}
+figcaption {
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 1.15rem;
+}
+.page-indicator {
+    padding: 1.5rem;
+    width: 100%;
+}
+.page-indicator p {
+    letter-spacing: 0.1rem;
+    padding: 0 0.5rem 0;
+}
+.page-indicator p:last-child {
+    color: #fff;
+}
+.page-indicator p:first-child:hover {
+    color: #33FF33;
+    transform: perspective(1.5rem) translateZ(-0.2rem);
+}
+main section section article p {
+    padding: 0 2rem 2rem;
 }
 /* Footer Component */
 footer {
