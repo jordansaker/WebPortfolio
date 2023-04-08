@@ -81,7 +81,7 @@
     height: 40rem;
 }
 /* Terminal content */
-.hidden section {
+.hidden section, main section {
     display: flex;
 }
 .hidden section {
