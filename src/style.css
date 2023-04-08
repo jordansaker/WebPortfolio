@@ -197,6 +197,7 @@ figcaption {
 }
 main section section article p {
     padding: 0 2rem 2rem;
+    font-size: 1.25rem;
 }
 /* Footer Component */
 footer {
@@ -215,8 +216,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    font-size: 2rem;
-    padding: 1rem 0 2rem;
+    font-size: 3rem;
+    padding: 1rem 1.1rem 2rem 0;
 }
 .fa-github:hover {
     color: #f0f6fc;
@@ -230,4 +231,24 @@ footer {
 }
 .fa-envelope:hover {
     color: #fff;
+}
+footer section article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+footer section article > p {
+    font-size: 1.1rem;
+}
+footer section article a p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: underline;
+    word-spacing: 0.5rem;
+}
+footer section article a p:hover {
+    color: #33FF33;
+    transform: perspective(2rem) translateZ(-0.2rem);
 }
