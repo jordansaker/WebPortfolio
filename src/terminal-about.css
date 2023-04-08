@@ -28,7 +28,7 @@
     }
 
 }
-@keyframes move-cover-blog { 
+@keyframes move-cover-about { 
     30% {
         transform: scaleX(0);
     }
@@ -74,9 +74,36 @@
     animation: move 5s linear forwards, blink 0.8s linear infinite;
 }
 .cover-anim {
-    animation: move-cover-blog 5s linear forwards;
+    animation: move-cover-about 5s linear forwards;
 }
-
 .terminal-background:hover {
-    height: 10rem;
+    height: 25rem;
+}
+/* Terminal content */
+.hidden section, main > section, .hidden section div  {
+    display: flex;
+}
+.hidden section div {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-content: center;
+    justify-content: center;
+}
+.hidden section div a p {
+    padding: 1.5rem 0.5rem;
+    font-size: 1.8rem;
+}
+.hidden section div a p {
+    color: #fff;
+}
+.hidden .resume {
+    color: #FFBB00;
+}
+.hidden section div a p:hover {
+    color: #33FF33;
+    opacity: 0.7;
+    transform: translateY(-0.5rem);
+}
+.hidden .resume:hover {
+    color: #FFCC00;
 }
