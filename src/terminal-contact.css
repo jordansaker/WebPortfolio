@@ -81,13 +81,8 @@
     height: 40rem;
 }
 /* Terminal content */
-.hidden section, main > section {
+.hidden section {
     display: flex;
-}
-main > section {
-    padding: 10rem 10rem 14rem;
-    justify-content: center;
-    align-content: center;
 }
 .hidden section {
     flex-direction: column;
@@ -112,12 +107,4 @@ main > section {
 }
 .hidden section a span {
     font-size: 3rem;
-}
-
-/* main > section {
-    padding: 10rem;
-} */
-main > article > p {
-    padding-top: 2rem;
-    margin-top: 4rem;
 }
