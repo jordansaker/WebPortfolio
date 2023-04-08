@@ -99,7 +99,7 @@
 .hidden section a p:hover, .hidden section a span:hover {
     opacity: 0.7;
     color: #33FF33;
-    transform: translateY(-0.5rem);
+    transform: perspective(3rem) translateZ(-0.2rem);
 }
 .hidden section a p {
     padding: 1.5rem 0;
