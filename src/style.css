@@ -166,14 +166,17 @@ main article article p {
     color: #fff;
 }
 main article figure img {
-    max-width: 90%;
+    max-width: 100%;
 }
 figure {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
     margin-top: 4rem;
+    margin-left: 2.5%;
+    border: 2px solid #fff;
+    width: 95%;
 }
 figcaption {
     padding: 1.5rem;
