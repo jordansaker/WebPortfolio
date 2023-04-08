@@ -121,13 +121,17 @@ main {
     font-size: 1.5rem;
 }
 .hero h1 {
-    padding: 1.2rem;
+    padding: 1.5rem 0 1.5rem 2rem;
     font-size: 2rem;
 }
 .hero p, main article > p {
     line-height: 1.45;
 }
-main > article p {
+main > article h2 {
+    font-size: 1.8rem;
+    padding: 1.2rem 1.5rem;
+}
+main > article p, main > article h2{
     margin: 1.25rem 0;
 }
 /* Footer Component */
