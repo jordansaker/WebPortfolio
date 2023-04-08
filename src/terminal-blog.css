@@ -114,3 +114,6 @@
 .hidden section article a p {
     padding: 0.5rem 0 0 1.5rem;
 }
+.hidden section article a h3 {
+    color: red;
+}
