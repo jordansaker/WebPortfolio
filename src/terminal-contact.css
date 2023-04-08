@@ -85,7 +85,7 @@
     display: flex;
 }
 main > section {
-    padding: 0rem 0 4rem;
+    padding: 10rem 10rem 14rem;
     justify-content: center;
     align-content: center;
 }
@@ -114,9 +114,9 @@ main > section {
     font-size: 3rem;
 }
 
-main > section {
+/* main > section {
     padding: 10rem;
-}
+} */
 main > article > p {
     padding-top: 2rem;
     margin-top: 4rem;
