@@ -37,12 +37,12 @@ a {
 /* Terminal component */
 .terminal-background {
     width: 22rem;
-    height: 5rem;
+    height: 4rem;
     background: #282828;
-    margin: 1rem auto;
+    margin: 0.4rem auto;
     opacity: 0.8;
     border: 1px solid #33FF33;
-    border-radius: 1.1rem;
+    border-radius: 0.5rem;
     transition: 2s;
     overflow: hidden;
 }
@@ -50,7 +50,7 @@ a {
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     color: #33FF33;
-    padding: 1.1rem;
+    padding: 1rem;
 }
 .inputline-dir > p, .cursor, .cmd, .cover {
     display: inline-block;
@@ -101,7 +101,7 @@ details nav a {
 }
 
 /* Main component */
-main, figure, .page-indicator {
+main, figure, .page-indicator, main article ul, main article section {
     display: flex;
 }
 main {
@@ -118,6 +118,7 @@ main {
     filter: blur(0.9rem) hue-rotate(85deg);
     animation: unblur 2.5s linear forwards;
     padding-top: 3rem;
+    border-radius: 2rem;
 }
 .hero, main > article > p {
     padding: 2rem;
@@ -127,7 +128,7 @@ main {
     letter-spacing: 0.05rem;
 }
 .hero h1 {
-    padding: 1.5rem 0 1.5rem 2rem;
+    padding: 1.5rem 0 1.5rem 5rem;
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
@@ -149,6 +150,34 @@ main > article > p, main > article > h2{
 }
 main > section {
     padding: 3rem 0 0;
+}
+main article section ul {
+    flex-direction: column;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    list-style-position: inside;
+    list-style: symbols(cyclic "> ");
+}
+main article section ul li {
+    color: #fff;
+}
+main article section {
+    justify-content: space-evenly;
+}
+main p span {
+    color:#FFB000;
+}
+main > p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    word-spacing: 0.5rem;
+    padding: 0 1.5rem;
+}
+main article img {
+    max-width: 60%;
+    margin: 0 0 1rem 20%;
+    border-radius: 50%;
+    opacity: 0.7;
 }
 /* Main component blog pages */
 main article article h2, main article article p {
