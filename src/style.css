@@ -416,10 +416,6 @@ footer section article a p {
     main > article > section {
         letter-spacing: 0.2rem;
     }
-}
-/* Contact */
-@media only screen and (max-width:810px) and (min-width:481px) {
-    /* Main */
     .hidden section {
         margin-top: 2rem;
     }
