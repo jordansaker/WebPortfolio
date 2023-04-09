@@ -3,44 +3,53 @@
     0% {
         background-color: #33FF33;
     }
+
     45% {
         background-color: #33FF33;
     }
+
     50% {
         background: #282828;
         opacity: 0.7;
     }
+
     95% {
         background: #282828;
         opacity: 0.7;
     }
+
     100% {
         background-color: #33FF33;
     }
 }
 
-@keyframes move { 
+@keyframes move {
     30% {
         transform: translateX(6rem);
     }
+
     100% {
         transform: translateX(6rem);
     }
 
 }
-@keyframes move-cover-about { 
+
+@keyframes move-cover-about {
     30% {
         transform: scaleX(0);
     }
+
     100% {
         transform: scaleX(0);
     }
 }
+
 /* "ls about" cursor placement */
 .cmd {
     left: 10rem;
 }
-.cursor, .cursor-stationary {
+.cursor,
+.cursor-stationary {
     background-color: #33FF33;
     width: 0.5rem;
     height: 1.3rem;
@@ -59,28 +68,25 @@
     top: 1.1rem;
     transform-origin: right;
 }
-.terminal-background:hover .cursor-stationary, .hidden {
-    display: none;
-}
-.terminal-background:hover .hidden {
-    display: block;
-    z-index: 4;
-    top: -3.35rem; /* 2.16rem */
-}
-.terminal-background:hover .hidden, .inputline-dir {
-    position: relative;
-}
 .cursor-anim {
     animation: move 5s linear forwards, blink 0.8s linear infinite;
 }
 .cover-anim {
     animation: move-cover-about 5s linear forwards;
 }
-.terminal-background:hover {
+.terminal-background {
     height: 25rem;
 }
+.terminal-background .hidden, .inputline-dir {
+    position: relative;
+}
 /* Terminal content */
-.hidden section, main > section, .hidden section div  {
+.hover {
+    display: none;
+}
+.hidden section,
+main>section,
+.hidden section div {
     display: flex;
 }
 .hidden section div {
@@ -99,11 +105,45 @@
 .hidden .resume {
     color: #FFBB00;
 }
-.hidden section div a p:hover {
-    color: #33FF33;
-    opacity: 0.7;
-    transform: perspective(3rem) translateZ(-0.2rem);
-}
-.hidden .resume:hover {
-    color: #FFCC00;
+/* Media Queries */
+/* To account for a tablet device used in landscape mode, max width for a tablet will be assumed as 1080 px. The follow media query sets terminal defualt display on mobile devices as follow expanded, with the hover feature only for devices with a pointer. It also only enables other hover features for screens larger than 1080 */
+@media only screen and (min-width:1081px) {
+    .terminal-background {
+        height: 4rem;
+    }
+
+    .hover,
+    .terminal-background:hover .hidden {
+        display: block;
+    }
+
+    .terminal-background:hover {
+        height: 25rem;
+    }
+
+    .terminal-background:hover .cursor-stationary,
+    .hidden {
+        display: none;
+    }
+
+    .terminal-background:hover .hidden {
+        z-index: 4;
+        top: -3.35rem;
+        /* 2.16rem */
+    }
+
+    .terminal-background:hover .hidden,
+    .inputline-dir {
+        position: relative;
+    }
+
+    .hidden section div a p:hover {
+        color: #33FF33;
+        opacity: 0.7;
+        transform: perspective(3rem) translateZ(-0.2rem);
+    }
+
+    .hidden .resume:hover {
+        color: #FFCC00;
+    }
 }
