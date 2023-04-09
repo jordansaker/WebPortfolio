@@ -3,16 +3,18 @@
 @import url('http://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 /* Keyframes */
-@keyframes unblur { 
-    0% {
-    }
+@keyframes unblur {
+    0% {}
+
     50% {
         filter: blur(0.5) hue-rotate(45deg);
     }
+
     100% {
         filter: blur(0) hue-rotate(0);
     }
 }
+
 /* General document styles */
 * {
     box-sizing: border-box;
@@ -24,16 +26,20 @@
 h1 {
     font-family: 'Cormorant Infant', serif;
 }
+
 .terminal-background {
     font-family: 'Roboto Mono', monospace;
 }
+
 body {
     background: #282828;
 }
+
 a {
     color: #33FF33;
     text-decoration: none;
 }
+
 /* Terminal component */
 .terminal-background {
     width: 22rem;
@@ -46,21 +52,34 @@ a {
     transition: 2s;
     overflow: hidden;
 }
+
 .inputline-dir {
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     color: #33FF33;
     padding: 1rem;
 }
-.inputline-dir > p, .cursor, .cmd, .cover {
+
+.inputline-dir>p,
+.cursor,
+.cmd,
+.cover {
     display: inline-block;
 }
-.cursor, cmd {
+
+.cursor,
+cmd {
     width: 10rem;
 }
-.cmd, .cursor-stationary, .cursor, .cover, .inputline-dir section {
+
+.cmd,
+.cursor-stationary,
+.cursor,
+.cover,
+.inputline-dir section {
     position: absolute;
 }
+
 /* Header component */
 header {
     display: flex;
@@ -68,11 +87,13 @@ header {
     background: #282828;
     padding: 1rem;
 }
+
 header img {
     width: 40%;
     border-radius: 50%;
     border: 2px solid #33FF33;
 }
+
 /* Nav bar Component */
 header nav {
     width: 100%;
@@ -81,29 +102,40 @@ header nav {
     display: flex;
     justify-content: space-between;
 }
+
 header nav a {
     color: #33FF33;
     text-decoration: none;
 }
-details > summary, details {
+
+details>summary,
+details {
     width: 100%;
     list-style: none;
     text-align: end;
     font-size: 2rem;
 }
+
 details nav {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 2rem;
 }
+
 details nav a {
     padding: 2rem;
 }
 
 /* Main component */
-main, figure, .page-indicator, main article ul, main article section, main > article > section > div {
+main,
+figure,
+.page-indicator,
+main article ul,
+main article section,
+main>article>section>div {
     display: flex;
 }
+
 main {
     background: #282828;
     flex-direction: column;
@@ -120,37 +152,51 @@ main {
     padding-top: 3rem;
     border-radius: 2rem;
 }
-.hero, main > article > p {
+
+.hero,
+main>article>p {
     padding: 2rem;
     font-size: 1.5rem;
 }
-.hero, main > article > p, main article article p {
+
+.hero,
+main>article>p,
+main article article p {
     letter-spacing: 0.05rem;
 }
+
 .hero h1 {
     padding: 1.5rem 0 1.5rem 5rem;
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-.hero p, main article > p {
+
+.hero p,
+main article>p {
     line-height: 1.45;
     word-spacing: 0.25rem;
 }
-main > article > p {
+
+main>article>p {
     padding-top: 2rem;
     margin-top: 4rem;
 }
-main > article > h2 {
+
+main>article>h2 {
     font-size: 1.8rem;
     padding: 1.2rem 1.5rem;
     letter-spacing: 0.2rem;
 }
-main > article > p, main > article > h2{
+
+main>article>p,
+main>article>h2 {
     margin: 1.25rem 0;
 }
-main > section {
+
+main>section {
     padding: 3rem 0 0;
 }
+
 main article section ul {
     flex-direction: column;
     padding: 0 1rem;
@@ -158,44 +204,55 @@ main article section ul {
     list-style-position: inside;
     list-style: symbols(cyclic "> ");
 }
+
 main article section ul li {
     color: #fff;
 }
+
 main article section {
     justify-content: space-evenly;
 }
+
 main p span {
-    color:#FFB000;
+    color: #FFB000;
 }
-main > p {
+
+main>p {
     font-size: 1.5rem;
     line-height: 1.5;
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
-main > article > section > img {
+
+main>article>section>img {
     max-width: 60%;
     border-radius: 50%;
     opacity: 0.8;
 }
+
 /* Main component blog pages */
-main article article h2, main article article p {
+main article article h2,
+main article article p {
     text-align: center;
-} 
+}
+
 main article article h2 {
     font-size: 1.8rem;
     padding: 0rem 1.5rem 1rem;
     letter-spacing: 0.2rem;
     margin-top: 6rem;
 }
+
 main article article p {
     padding: 0 1rem 2rem;
     font-size: 1.10rem;
     color: #fff;
 }
+
 main article figure img {
     max-width: 100%;
 }
+
 figure {
     flex-direction: column;
     justify-content: center;
@@ -206,31 +263,32 @@ figure {
     border: 2px solid #fff;
     width: 95%;
 }
+
 figcaption {
     padding: 1.5rem;
     color: #fff;
     font-size: 1.15rem;
     text-align: center;
 }
+
 .page-indicator {
     padding: 1.5rem;
     width: 100%;
 }
+
 .page-indicator p {
     letter-spacing: 0.1rem;
     padding: 0 0.5rem 0;
 }
+
 .page-indicator p:last-child {
     color: #fff;
-}
-.page-indicator p:first-child:hover {
-    color: #33FF33;
-    transform: perspective(1.5rem) translateZ(-0.2rem);
 }
 main section section article p {
     padding: 0 2rem 2rem;
     font-size: 1.25rem;
 }
+
 /* Footer Component */
 footer {
     background: #282828;
@@ -238,12 +296,14 @@ footer {
     padding: 3rem 2rem;
     font-size: 1.5rem;
 }
+
 #social-links {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #social-links div {
     width: 100%;
     display: flex;
@@ -251,28 +311,18 @@ footer {
     font-size: 3rem;
     padding: 1rem 1.1rem 2rem 0;
 }
-.fa-github:hover {
-    color: #f0f6fc;
-    opacity: 0.7;
-}
-.fa-linkedin:hover { 
-    color: #0a66c2;
-}
-.fa-facebook:hover {
-    color: #3b5998;
-}
-.fa-envelope:hover {
-    color: #fff;
-}
+
 footer section article {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 2rem;
 }
-footer section article > p {
+
+footer section article>p {
     font-size: 1.1rem;
 }
+
 footer section article a p {
     padding-bottom: 1rem;
     font-size: 1.5rem;
@@ -280,7 +330,90 @@ footer section article a p {
     text-decoration: underline;
     word-spacing: 0.5rem;
 }
-footer section article a p:hover {
-    color: #33FF33;
-    transform: perspective(2rem) translateZ(-0.2rem);
+
+/* Media queries */
+/* Because of mobile devices not being able to use the hover pseudo class, all hovers will be placed in a media query with a min-width of 1080px (tablet landscape) */
+@media only screen and (min-width: 1081px) {
+
+    /* Main hover components */
+    /* Main blog hover components */
+    .page-indicator p:first-child:hover {
+        color: #33FF33;
+        transform: perspective(1.5rem) translateZ(-0.2rem);
+    }
+    /* Footer hover components */
+    footer section article a p:hover {
+        color: #33FF33;
+        transform: perspective(2rem) translateZ(-0.2rem);
+    }
+
+    .fa-github:hover {
+        color: #f0f6fc;
+        opacity: 0.7;
+    }
+
+    .fa-linkedin:hover {
+        color: #0a66c2;
+    }
+
+    .fa-facebook:hover {
+        color: #3b5998;
+    }
+
+    .fa-envelope:hover {
+        color: #fff;
+    }
+}
+/* Tablet */
+/* Index */
+@media only screen and (max-width:810px) and (min-width:481px) {
+    /* Header */
+    header nav {
+        font-size: 1.8rem;
+    }
+    details nav {
+        flex-direction: row;
+    }
+    header img {
+        width: 30%;
+    }
+    /* Main */
+    .hero img {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .hero h1 { 
+        font-size: 4rem;
+    }
+    .hero p {
+        font-size: 1.6rem;
+    }
+    main article p {
+        font-size: 1.4rem;
+    }
+    /* Footer */
+    #social-links p {
+        font-size: 1.8rem;
+    }
+    #social-links div {
+        width: 75%
+    }
+}
+/* About */
+@media only screen and (max-width:810px) and (min-width:481px) {
+    /* Main */
+    main > article > h2 {
+        font-size: 2.4rem;
+        margin-top: 2rem;
+        padding-left: 4rem;
+    }
+    main > article > section > img {
+        max-width: 45%;
+    }
+    main > article > p, main > article > section{
+        font-size: 1.6rem;
+    }
+    main > article > section {
+        letter-spacing: 0.2rem;
+    }
 }
