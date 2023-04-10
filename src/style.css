@@ -250,6 +250,7 @@ main>article {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 4.7rem;
 }
 #project-display section {
     flex-direction: column;
@@ -261,7 +262,7 @@ main>article {
     margin: 1rem;
 }
 #project-display > section > div > p {
-    padding: 1.5rem 1.1rem;
+    padding: 1.9rem 1.1rem;
     color: #282828;
     font-size: 1.8rem;
     text-align: center;
@@ -270,11 +271,13 @@ main>article {
     background: #33FF33;
     width: 80%;
     text-align: center;
+    padding-bottom: 1.1rem;
 }
-#project-display > section > div > img {
+#project-display > section > div > a > img {
     max-width: 100%;
-    object-fit: cover;
+    height: 73%;
     border-radius: 0;
+    object-fit: cover;
 }
 /* Main component blog pages */
 main article article h2,
@@ -353,7 +356,8 @@ footer {
 
 #social-links div {
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-between;
     font-size: 3rem;
     padding: 1rem 1.1rem 2rem 0;
 }
