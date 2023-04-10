@@ -15,6 +15,33 @@
     }
 }
 
+@keyframes display-flip {
+    from {
+        transform: rotate3d(-10, -1.5, 0, 20deg);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes border-trace {
+    0% {
+        border: 1px solid #282828;
+    }
+    100% {
+        border: 1px solid #33FF33;
+    }
+}
+@keyframes border-trace-hover {
+    0% {
+        border: 1px solid #282828;
+    }
+    100% {
+        border: 1px solid #fff;
+    }
+}
+
 /* General document styles */
 * {
     box-sizing: border-box;
@@ -87,6 +114,7 @@ header {
     background: #282828;
     padding: 1rem;
 }
+
 /* Nav bar Component */
 header nav {
     width: 100%;
@@ -95,19 +123,23 @@ header nav {
     display: flex;
     justify-content: space-between;
 }
+
 header img {
     width: 40%;
     border-radius: 50%;
     border: 2px solid #33FF33;
 }
+
 header nav a {
     color: #33FF33;
     text-decoration: none;
 }
+
 .activepage {
     color: #fff;
     pointer-events: none;
 }
+
 /* Mobile nav dropdown */
 details>summary,
 details {
@@ -116,11 +148,13 @@ details {
     text-align: end;
     font-size: 2rem;
 }
+
 details nav {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 2rem;
 }
+
 details nav a {
     padding: 2rem;
 }
@@ -135,7 +169,7 @@ main article section,
 main>article>section>div,
 #project-display,
 #project-display section,
-#project-display > section > div > a {
+#project-display>section>div>a {
     display: flex;
 }
 
@@ -146,10 +180,12 @@ main {
     overflow: hidden;
     padding-bottom: 1.5rem;
 }
+
 /* Hero component */
 .hero {
     flex-direction: column;
 }
+
 .hero img {
     opacity: 0.8;
     width: 100%;
@@ -182,6 +218,7 @@ main article>p {
     line-height: 1.45;
     word-spacing: 0.25rem;
 }
+
 /* Main content for all pages */
 main>article>p {
     padding-top: 2rem;
@@ -194,10 +231,15 @@ main>article>h2:first-of-type {
     padding: 1.2rem 1.5rem 1.2rem 4rem;
     letter-spacing: 0.2rem;
 }
+
 main>article>h2 {
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 1.5rem 0;
+}
+
+main>article>h2:nth-of-type(2),
+main>article>h2:nth-of-type(3) {
     text-align: center;
 }
 
@@ -238,21 +280,26 @@ main>p {
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
+
 /* About page image and skills list component */
 main>article>section>section>img {
     max-width: 60%;
     border-radius: 50%;
     opacity: 0.8;
 }
+
 main>article>section>section>p {
     font-size: 1.5rem;
 }
+
 main>article>section>section:last-of-type {
     flex-direction: column;
 }
+
 main>article {
     padding: 3rem 0;
 }
+
 /* About page Projects Display Component */
 #project-display {
     flex-direction: column;
@@ -260,43 +307,60 @@ main>article {
     width: 100%;
     margin-top: 4.7rem;
 }
+
 #project-display h2 {
     font-size: 1.8rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
+
 #project-display section {
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-#project-display > section > div {
+
+#project-display>section>div {
     border: 1px solid #33FF33;
     margin: 1rem;
-
-}
-#project-display > section > div > a {
-    flex-direction: column;
-}
-#project-display > section > div > a img {
-    padding-bottom: 1.5rem;
-}
-#project-display > section > div > a > p {
-    padding: 1.9rem 1.1rem;
-    color: #282828;
-    font-size: 1.8rem;
-    text-align: center;
-}
-#project-display > section > div {
     background: #33FF33;
     width: 80%;
     text-align: center;
     padding-bottom: 1.1rem;
 }
-#project-display > section > div > a > img {
+
+#project-display>section>div:last-of-type {
+    border: 1px solid #FFB000;
+    background: #FFB000;
+}
+
+#project-display>section>div>a {
+    flex-direction: column;
+}
+
+#project-display>section>div>a img {
+    padding-bottom: 1.5rem;
+}
+
+#project-display>section>div>a>p {
+    padding: 1.9rem 1.1rem;
+    color: #282828;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#project-display>section>div>a>img {
     max-width: 100%;
+    height: 40vh;
+    object-fit: cover;
     border-radius: 0;
 }
+#project-display>section>div:first-of-type,
+#project-display>section>div:last-of-type,
+#project-display>section:nth-child(2)>div {
+    animation: border-trace 3s ease-in infinite alternate;
+}
+
 /* Main component blog pages */
 main article article h2,
 main article article p {
@@ -315,6 +379,7 @@ main article article p {
     font-size: 1.10rem;
     color: #fff;
 }
+
 /* Figure component in blog posts */
 main article figure img {
     max-width: 100%;
@@ -338,6 +403,7 @@ figcaption {
     text-align: center;
     line-height: 2rem;
 }
+
 /* Page indicator for top of blog posts */
 .page-indicator {
     padding: 1.5rem;
@@ -352,6 +418,7 @@ figcaption {
 .page-indicator p:last-child {
     color: #fff;
 }
+
 main section section article p {
     padding: 0 2rem 2rem;
     font-size: 1.25rem;
@@ -364,6 +431,7 @@ footer {
     padding: 3rem 2rem;
     font-size: 1.5rem;
 }
+
 /* Social links component */
 #social-links {
     width: 100%;
@@ -379,6 +447,7 @@ footer {
     font-size: 3rem;
     padding: 1rem 1.1rem 2rem 0;
 }
+
 /* Copyright and to top section */
 footer section article {
     display: flex;
@@ -402,43 +471,57 @@ footer section article a p {
 /* Media queries */
 /* Because of mobile devices not being able to use the hover pseudo class, all hovers will be placed in a media query with a min-width of 1080px (tablet landscape) */
 @media only screen and (min-width: 1081px) {
+
     /* Moving text based on screen width */
-    .hero article > p:last-of-type {
+    .hero article>p:last-of-type {
         transform: translateX(8.7rem)
     }
+
     /* Main hover components */
     main article section ul li:hover {
         opacity: 0.7;
         transform: translateX(-1.2rem);
     }
-    .hero article > p:first-of-type:hover {
+
+    .hero article>p:first-of-type:hover {
         transform: translateX(-1rem)
     }
-    .hero article > p:last-of-type:hover {
+
+    .hero article>p:last-of-type:hover {
         transform: translateX(1rem)
+    }
+    /* About page feature image */
+    main > article > section > section > img:hover {
+        transform: perspective(2rem) translateZ(0.15rem);
     }
     /* Main blog hover components */
     .page-indicator p:first-child:hover {
         color: #33FF33;
         transform: perspective(1.5rem) translateZ(-0.2rem);
     }
+
     /* Project Display Components hover */
-    #project-display > section > div:hover {
+    #project-display>section>div:hover {
         background: #fff;
         border: 1px solid #fff;
     }
-    #project-display > section > div:hover > p {
+
+    #project-display>section>div:hover>p {
         font-size: 2rem;
     }
-    #project-display > section > div:first-of-type:hover {
-        transform: rotate3d(-10,-1.5,0,20deg);
+    #project-display>section>div:first-of-type:hover p,
+    #project-display>section>div:last-of-type:hover p,
+    #project-display>section:nth-child(2)>div:hover p {
+        font-size: 1.6rem;
+        font-weight: 600;
     }
-    #project-display > section > div:last-of-type:hover {
-        transform: rotate3d(-10,-1.5,0,20deg);
+
+    #project-display>section>div:first-of-type:hover,
+    #project-display>section>div:last-of-type:hover,
+    #project-display>section:nth-child(2)>div:hover {
+        animation: display-flip 1s linear infinite alternate, border-trace-hover 10s linear infinite alternate;
     }
-    #project-display > section:nth-child(2) > div:hover {
-        transform: rotate3d(-10,-1.5,0,20deg);
-    }
+
     /* Footer hover components */
     footer section article a p:hover {
         color: #33FF33;
@@ -462,137 +545,235 @@ footer section article a p {
         color: #fff;
     }
 }
+
+/* Project Display response */
+@media only screen and (max-width:1090px) and (min-width:811px) {
+    #project-display>section>div>a>img {
+        height: 30vh;
+    }
+
+    #project-display>section>div>a>p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:809px) {
+    #project-display section div {
+        width: 80%;
+    }
+
+    #project-display>section>div>a>img {
+        height: 38vh;
+    }
+
+    #project-display>section>div>a>p {
+        font-size: 1.5rem;
+    }
+
+    #project-display section {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width:811px) and (max-width:1060px) {
+    #project-display section div {
+        width: 80%;
+    }
+
+    #project-display>section>div>a>img {
+        height: 45vh;
+    }
+
+    #project-display>section>div>a>p {
+        font-size: 1.2rem;
+    }
+
+    #project-display section {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width:1061px) {
+    #project-display section div {
+        width: 80%;
+    }
+
+    #project-display>section>div>a>p {
+        font-size: 1.2rem;
+    }
+
+    #project-display section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
 /* Nav response */
-@media only screen and (min-width:811px){
+@media only screen and (min-width:811px) {
     #small-screen {
         display: none;
     }
+
     #wide-screen {
         justify-content: end;
         padding: 0 1.5rem;
     }
+
     #wide-screen a {
         padding: 0 2rem;
     }
 }
-@media only screen and (max-width:810px) and (min-width:651px){
+
+@media only screen and (max-width:810px) and (min-width:651px) {
     #small-screen {
         display: none;
     }
+
     #wide-screen {
         padding: 2rem 4rem;
     }
+
     #wide-screen a {
         font-size: 1.6rem;
     }
 }
-@media only screen and (max-width:650px) and (min-width:550px){
+
+@media only screen and (max-width:650px) and (min-width:550px) {
     #small-screen {
         display: none;
     }
+
     #wide-screen {
         padding: 2rem 2rem;
     }
+
     #wide-screen a {
         font-size: 1.6rem;
     }
 }
-@media only screen and (max-width:500px) and (min-width:550px){
+
+@media only screen and (max-width:500px) and (min-width:550px) {
     #wide-screen {
         display: none;
     }
+
     #small-screen {
         display: block;
     }
 }
-@media only screen and (max-width:549px){
+
+@media only screen and (max-width:549px) {
     #wide-screen {
         display: none;
     }
 }
+
 /* Social-links */
 @media only screen and (min-width:450px) and (max-width:625px) {
     #social-links div {
         width: 80%;
     }
 }
-@media only screen and (min-width:626px) and (max-width:767px){
+
+@media only screen and (min-width:626px) and (max-width:767px) {
     #social-links div {
         width: 70%;
     }
 }
+
 @media only screen and (min-width:768px) and (max-width:810px) {
     #social-links div {
         width: 40%;
     }
 }
+
 @media only screen and (min-width:811px) and (max-width:1150px) {
     #social-links div {
         width: 34%;
     }
 }
+
 @media only screen and (min-width:1151px) {
     #social-links div {
         width: 30%;
     }
 }
+
 /* Tablet page content response */
 /* Index */
 @media only screen and (max-width:767px) and (min-width:481px) {
+
     /* Header */
     header nav {
         font-size: 1.8rem;
     }
+
     details nav {
         flex-direction: row;
     }
+
     header img {
         width: 35%;
     }
+
     /* Main */
     .hero img {
         width: 90%;
         margin: 0 5%;
         border-radius: 0 0 50% 50%;
     }
-    .hero h1 { 
+
+    .hero h1 {
         font-size: 4rem;
     }
+
     .hero p {
         font-size: 1.6rem;
     }
+
     main article p {
         font-size: 1.4rem;
     }
+
     /* Footer */
     #social-links p {
         font-size: 1.8rem;
     }
+
     #social-links div {
         width: 75%
     }
 }
+
 /* About/Conatct/Blog/Blog posts */
 @media only screen and (max-width:767px) and (min-width:481px) {
+
     /* Main */
-    main > article > h2 {
+    main>article>h2 {
         font-size: 2.4rem;
         margin-top: 2rem;
         padding-left: 4rem;
     }
-    main > article > section > img {
+
+    main>article>section>img {
         max-width: 45%;
     }
-    main > article > p, main > article > section{
+
+    main>article>p,
+    main>article>section {
         font-size: 1.6rem;
     }
-    main > article > section {
+
+    main>article>section {
         letter-spacing: 0.2rem;
     }
+
     .hidden section {
         margin-top: 2rem;
     }
 }
+
 /* Desktop */
 /* Logo sizing */
 @media only screen and (max-width:950px) and (min-width:768px) {
@@ -600,11 +781,13 @@ footer section article a p {
         max-width: 35%;
     }
 }
+
 @media only screen and (max-width:1080px) and (min-width:951px) {
     header img {
         max-width: 25%;
     }
 }
+
 @media only screen and (min-width:1081px) {
     header img {
         max-width: 12%;
@@ -613,76 +796,89 @@ footer section article a p {
 
 /* Index */
 @media only screen and (min-width:768px) {
+
     /* Header */
     header nav {
         font-size: 1.2rem;
     }
+
     /* Main */
     main {
         margin-bottom: 15rem;
     }
+
     .hero {
         flex-direction: row;
     }
+
     .hero img {
         max-width: 45%;
         border-radius: 0 0 50% 50%;
         padding-top: 5rem;
     }
+
     .hero article {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         padding: 3.5rem 0 0 2.2rem;
     }
+
     .hero article h1 {
         font-size: 4rem;
     }
-    .hero + article {
+
+    .hero+article {
         margin-top: 8rem;
     }
-    #project-display section {
-        flex-direction: row;
-        justify-content: space-around;
+
+    /* Project Display */
+    #project-display {
+        margin-top: 10rem;
+        margin-bottom: 8rem;
     }
-    #project-display section div {
-        width: 50%;
-    }
-    #project-display section div a p {
-        font-size: 1.3rem;
-    }
+
     #index-terminal {
         margin-top: 11rem;
     }
+
     /* Footer */
     #social-links p {
         padding: 2rem 0;
     }
-    footer section article > p, footer section article a p {
+
+    footer section article>p,
+    footer section article a p {
         font-size: 1.1rem;
         padding: 0 2rem;
     }
 }
+
 /* About/Conact/Blog/Blog Posts */
 @media only screen and (min-width:768px) {
     main {
         max-width: 1400px;
         margin: 0 auto;
     }
-    main > article > section > img {
+
+    main>article>section>img {
         max-width: 20%;
     }
-    main > article > section > section:last-of-type {
+
+    main>article>section>section:last-of-type {
         flex-direction: row;
         align-items: center;
     }
+
     main article section ul {
         justify-content: start;
     }
+
     main article figure {
         max-width: 50%;
         margin: 4rem auto;
     }
+
     main article section {
         padding-bottom: 2.5rem;
     }
