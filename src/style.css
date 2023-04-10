@@ -132,7 +132,9 @@ figure,
 .page-indicator,
 main article ul,
 main article section,
-main>article>section>div {
+main>article>section>div,
+#project-display,
+#project-display section {
     display: flex;
 }
 
@@ -242,6 +244,37 @@ main>article>section>section:last-of-type {
 }
 main>article {
     padding: 3rem 0;
+}
+/* About page Projects Display Component */
+#project-display {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#project-display section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#project-display > section > div {
+    border: 1px solid #33FF33;
+    margin: 1rem;
+}
+#project-display > section > div > p {
+    padding: 1.5rem 1.1rem;
+    color: #282828;
+    font-size: 1.8rem;
+    text-align: center;
+}
+#project-display > section > div {
+    background: #33FF33;
+    width: 80%;
+    text-align: center;
+}
+#project-display > section > div > img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0;
 }
 /* Main component blog pages */
 main article article h2,
@@ -366,6 +399,14 @@ footer section article a p {
     .page-indicator p:first-child:hover {
         color: #33FF33;
         transform: perspective(1.5rem) translateZ(-0.2rem);
+    }
+    /* Project Display Components hover */
+    #project-display > section > div:hover {
+        background: #fff;
+        border: 1px solid #fff;
+    }
+    #project-display > section > div:hover > p {
+        font-size: 2rem;
     }
     /* Footer hover components */
     footer section article a p:hover {
