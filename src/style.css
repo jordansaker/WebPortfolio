@@ -278,6 +278,7 @@ figcaption {
     color: #fff;
     font-size: 1.15rem;
     text-align: center;
+    line-height: 2rem;
 }
 /* Page indicator for top of blog posts */
 .page-indicator {
