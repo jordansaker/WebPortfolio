@@ -87,13 +87,6 @@ header {
     background: #282828;
     padding: 1rem;
 }
-
-header img {
-    width: 40%;
-    border-radius: 50%;
-    border: 2px solid #33FF33;
-}
-
 /* Nav bar Component */
 header nav {
     width: 100%;
@@ -102,12 +95,16 @@ header nav {
     display: flex;
     justify-content: space-between;
 }
-
+header img {
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid #33FF33;
+}
 header nav a {
     color: #33FF33;
     text-decoration: none;
 }
-
+/* Mobile nav dropdown */
 details>summary,
 details {
     width: 100%;
@@ -115,13 +112,11 @@ details {
     text-align: end;
     font-size: 2rem;
 }
-
 details nav {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 2rem;
 }
-
 details nav a {
     padding: 2rem;
 }
@@ -144,6 +139,7 @@ main {
     overflow: hidden;
     padding-bottom: 1.5rem;
 }
+/* Hero component */
 .hero {
     flex-direction: column;
 }
@@ -179,7 +175,7 @@ main article>p {
     line-height: 1.45;
     word-spacing: 0.25rem;
 }
-
+/* Main content for all pages */
 main>article>p {
     padding-top: 2rem;
     margin-top: 4rem;
@@ -228,7 +224,7 @@ main>p {
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
-
+/* About page image and skills list component */
 main>article>section>section>img {
     max-width: 60%;
     border-radius: 50%;
@@ -261,7 +257,7 @@ main article article p {
     font-size: 1.10rem;
     color: #fff;
 }
-
+/* Figure component in blog posts */
 main article figure img {
     max-width: 100%;
 }
@@ -283,7 +279,7 @@ figcaption {
     font-size: 1.15rem;
     text-align: center;
 }
-
+/* Page indicator for top of blog posts */
 .page-indicator {
     padding: 1.5rem;
     width: 100%;
@@ -309,7 +305,7 @@ footer {
     padding: 3rem 2rem;
     font-size: 1.5rem;
 }
-
+/* Social links component */
 #social-links {
     width: 100%;
     display: flex;
@@ -323,7 +319,7 @@ footer {
     font-size: 3rem;
     padding: 1rem 1.1rem 2rem 0;
 }
-
+/* Copyright and to top section */
 footer section article {
     display: flex;
     justify-content: space-between;
