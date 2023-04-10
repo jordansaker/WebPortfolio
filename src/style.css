@@ -104,6 +104,10 @@ header nav a {
     color: #33FF33;
     text-decoration: none;
 }
+.activepage {
+    color: #fff;
+    pointer-events: none;
+}
 /* Mobile nav dropdown */
 details>summary,
 details {
@@ -471,7 +475,7 @@ footer section article a p {
         flex-direction: row;
     }
     header img {
-        width: 30%;
+        width: 35%;
     }
     /* Main */
     .hero img {
@@ -518,14 +522,28 @@ footer section article a p {
     }
 }
 /* Desktop */
+/* Logo sizing */
+@media only screen and (max-width:950px) and (min-width:768px) {
+    header img {
+        max-width: 35%;
+    }
+}
+@media only screen and (max-width:1080px) and (min-width:951px) {
+    header img {
+        max-width: 25%;
+    }
+}
+@media only screen and (min-width:1081px) {
+    header img {
+        max-width: 12%;
+    }
+}
+
 /* Index */
 @media only screen and (min-width:768px) {
     /* Header */
     header nav {
         font-size: 1.2rem;
-    }
-    header img {
-        max-width: 10%;
     }
     /* Main */
     main {
