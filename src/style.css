@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto+Mono:wght@300;400;700&display=swap');
+
 
 @import url('http://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
@@ -27,7 +28,38 @@
 
 @keyframes border-trace {
     0% {
+        border: 1px solid #33FF33;
+        opacity: 0.7;
+    }
+    25% {
         border: 1px solid #282828;
+        
+    }
+    100% {
+        border: 1px solid #33FF33;
+    }
+}
+@keyframes border-trace-2 {
+    0% {
+        border: 1px solid #33FF33;
+        opacity: 0.7;
+    }
+    25% {
+        border: 1px solid #282828;
+        
+    }
+    100% {
+        border: 1px solid #33FF33;
+    }
+}
+@keyframes border-trace-3 {
+    0% {
+        border: 1px solid #33FF33;
+        opacity: 0.7;
+    }
+    25% {
+        border: 1px solid #282828;
+        
     }
     100% {
         border: 1px solid #33FF33;
@@ -50,8 +82,9 @@
     color: #33FF33;
 }
 
-h1 {
-    font-family: 'Cormorant Infant', serif;
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .terminal-background {
@@ -65,6 +98,14 @@ body {
 a {
     color: #33FF33;
     text-decoration: none;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+ul, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 /* Terminal component */
@@ -327,6 +368,7 @@ main>article {
     width: 80%;
     text-align: center;
     padding-bottom: 1.1rem;
+    opacity: 0.7;
 }
 
 #project-display>section>div:last-of-type {
@@ -355,10 +397,17 @@ main>article {
     object-fit: cover;
     border-radius: 0;
 }
-#project-display>section>div:first-of-type,
-#project-display>section>div:last-of-type,
+#project-display>section>div:first-of-type
+{
+    animation: border-trace 1s linear infinite alternate-reverse;
+}
+
 #project-display>section:nth-child(2)>div {
-    animation: border-trace 3s ease-in infinite alternate;
+    animation: border-trace-3 3s ease-in infinite alternate;
+}
+
+#project-display>section>div:last-of-type {
+    animation: border-trace 3s ease-in-out infinite;
 }
 
 /* Main component blog pages */
@@ -520,6 +569,7 @@ footer section article a p {
     #project-display>section>div:last-of-type:hover,
     #project-display>section:nth-child(2)>div:hover {
         animation: display-flip 1s linear infinite alternate, border-trace-hover 10s linear infinite alternate;
+        opacity: 1;
     }
 
     /* Footer hover components */
