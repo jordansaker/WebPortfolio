@@ -1,11 +1,23 @@
-This is a portfolio for the Coder Academy T1A2 - Portfolio assesment
+# Coder Academy T1A2 - Portfolio Assignment
 
-## References
-- Blog post 1 Image: https://static.javatpoint.com/core/images/coercion-in-java.png
+**Published URL:**
 
-- Blog post 2 Image: https://www.ipxo.com/app/uploads/2022/04/Routers-refer-to-routing-tables-to-determine-the-best-path.jpg
-- Blog post 3 Image: https://blog.fileformat.com/wp-content/uploads/sites/28/2019/05/Markup-Languages-FileFormat-300x199.png
+**GitHub repository:** https://github.com/jordansaker/WebPortfolio
 
-- Blog post 4 Image: https://media.geeksforgeeks.org/wp-content/uploads/20200530152827/223-1.png
+### **Description:**
 
-- Blog post 5 Image: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png
+The purpose of this website is to provide a platform to display my work, provide a quick way for potential employers to view my work history and developer skills, and to contact me using their prefered method of contact.
+
+#### Functionality and Features
+
+#### Screenshots
+
+
+#### Sitemap
+Below is a screenshot of the sitemap overview. I have an index page with 3 other pages and one of those 3 pages (Blog page) linking to 5 pages (Blog posts). Index, Blog, Contact, and About pages are all accessible through the navbar while the 5 blog pages are only accessible through a listing on the Blog page.
+
+![sitemap-overview](docs/sitemap.jpg)
+
+#### Target Audience
+
+#### Tech Stack
