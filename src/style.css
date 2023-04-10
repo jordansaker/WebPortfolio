@@ -134,7 +134,8 @@ main article ul,
 main article section,
 main>article>section>div,
 #project-display,
-#project-display section {
+#project-display section,
+#project-display > section > div > a {
     display: flex;
 }
 
@@ -187,11 +188,17 @@ main>article>p {
     margin-top: 4rem;
 }
 
-main>article>h2 {
+main>article>h2:first-of-type {
     font-size: 2.4rem;
     margin-top: 2rem;
     padding: 1.2rem 1.5rem 1.2rem 4rem;
     letter-spacing: 0.2rem;
+}
+main>article>h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    text-align: center;
 }
 
 main>article>p,
@@ -218,6 +225,7 @@ main article section ul li {
 main article section {
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 1rem;
 }
 
 main p span {
@@ -252,6 +260,11 @@ main>article {
     width: 100%;
     margin-top: 4.7rem;
 }
+#project-display h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
 #project-display section {
     flex-direction: column;
     align-items: center;
@@ -260,8 +273,15 @@ main>article {
 #project-display > section > div {
     border: 1px solid #33FF33;
     margin: 1rem;
+
 }
-#project-display > section > div > p {
+#project-display > section > div > a {
+    flex-direction: column;
+}
+#project-display > section > div > a img {
+    padding-bottom: 1.5rem;
+}
+#project-display > section > div > a > p {
     padding: 1.9rem 1.1rem;
     color: #282828;
     font-size: 1.8rem;
@@ -275,9 +295,7 @@ main>article {
 }
 #project-display > section > div > a > img {
     max-width: 100%;
-    height: 73%;
     border-radius: 0;
-    object-fit: cover;
 }
 /* Main component blog pages */
 main article article h2,
@@ -307,7 +325,7 @@ figure {
     justify-content: center;
     align-items: center;
     padding-top: 1.5rem;
-    margin-top: 4rem;
+    margin: 4rem 0;
     margin-left: 2.5%;
     border: 2px solid #fff;
     width: 95%;
@@ -411,6 +429,15 @@ footer section article a p {
     }
     #project-display > section > div:hover > p {
         font-size: 2rem;
+    }
+    #project-display > section > div:first-of-type:hover {
+        transform: rotate3d(-10,-1.5,0,20deg);
+    }
+    #project-display > section > div:last-of-type:hover {
+        transform: rotate3d(-10,-1.5,0,20deg);
+    }
+    #project-display > section:nth-child(2) > div:hover {
+        transform: rotate3d(-10,-1.5,0,20deg);
     }
     /* Footer hover components */
     footer section article a p:hover {
@@ -614,6 +641,19 @@ footer section article a p {
     .hero + article {
         margin-top: 8rem;
     }
+    #project-display section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #project-display section div {
+        width: 50%;
+    }
+    #project-display section div a p {
+        font-size: 1.3rem;
+    }
+    #index-terminal {
+        margin-top: 11rem;
+    }
     /* Footer */
     #social-links p {
         padding: 2rem 0;
@@ -641,7 +681,7 @@ footer section article a p {
     }
     main article figure {
         max-width: 50%;
-        margin: 0 auto;
+        margin: 4rem auto;
     }
     main article section {
         padding-bottom: 2.5rem;
