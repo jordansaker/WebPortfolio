@@ -21,10 +21,10 @@
 
 @keyframes move { 
     30% {
-        transform: translateX(5rem);
+        transform: translateX(4rem);
     }
     100% {
-        transform: translateX(5rem);
+        transform: translateX(4rem);
     }
 
 }
@@ -38,7 +38,7 @@
 }
 /* "ls blog" cursor placement */
 .cmd {
-    left: 9.5rem;
+    left: 8rem;
 }
 .cursor, .cursor-stationary {
     background-color: #33FF33;
@@ -49,10 +49,10 @@
 }
 .cursor-stationary {
     animation: blink 0.8s linear infinite;
-    left: 14rem;
+    left: 7.5rem;
 }
 .cover {
-    width: 5rem;
+    width: 4rem;
     height: 1.2rem;
     background-color: #282828;
     z-index: 2;

@@ -20,10 +20,10 @@
 
 @keyframes move { 
     30% {
-        transform: translateX(8rem);
+        transform: translateX(6rem);
     }
     100% {
-        transform: translateX(8rem);
+        transform: translateX(6rem);
     }
 
 }
@@ -52,7 +52,7 @@
     top: 1.1rem;
 }
 .cover {
-    width: 8rem;
+    width: 6rem;
     height: 1.2rem;
     background-color: #282828;
     z-index: 2;
@@ -75,13 +75,14 @@
     animation: move-cover-contact 4s linear forwards;
 }
 /* Terminal content */
-.hidden section, main section {
+.hidden section, main > section {
     display: flex;
 }
 .hidden section {
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
+    margin-left: 1.5rem;
 }
 .hidden section > div {
     flex-direction: column;
