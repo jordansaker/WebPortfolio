@@ -719,37 +719,6 @@ footer section article a p {
     }
 }
 
-/* Social-links */
-@media only screen and (min-width:450px) and (max-width:625px) {
-    #social-links div {
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width:626px) and (max-width:767px) {
-    #social-links div {
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:810px) {
-    #social-links div {
-        width: 40%;
-    }
-}
-
-@media only screen and (min-width:811px) and (max-width:1150px) {
-    #social-links div {
-        width: 34%;
-    }
-}
-
-@media only screen and (min-width:1151px) {
-    #social-links div {
-        width: 30%;
-    }
-}
-
 /* Tablet page content response */
 /* Index */
 @media only screen and (max-width:767px) and (min-width:481px) {
