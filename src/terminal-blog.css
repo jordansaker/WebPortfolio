@@ -124,8 +124,7 @@
         position: relative;
     }
     .terminal-background:hover {
-        height: 40rem;
-        overflow-y: scroll;
+        height: 80rem;
     }
     .hidden section a p:hover {
     color: #33FF33;
