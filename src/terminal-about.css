@@ -25,11 +25,11 @@
 
 @keyframes move {
     30% {
-        transform: translateX(6rem);
+        transform: translateX(5rem);
     }
 
     100% {
-        transform: translateX(6rem);
+        transform: translateX(5rem);
     }
 
 }
@@ -46,7 +46,7 @@
 
 /* "ls about" cursor placement */
 .cmd {
-    left: 10rem;
+    left: 8.5rem;
 }
 .cursor,
 .cursor-stationary {
@@ -58,10 +58,10 @@
 }
 .cursor-stationary {
     animation: blink 0.8s linear infinite;
-    left: 15.5rem;
+    left: 8rem;
 }
 .cover {
-    width: 6rem;
+    width: 5rem;
     height: 1.2rem;
     background-color: #282828;
     z-index: 2;
