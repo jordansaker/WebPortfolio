@@ -42,7 +42,7 @@
 }
 .cursor-stationary {
     animation: blink 0.8s linear infinite;
-    left: 13.5rem;
+    left: 6rem;
 }
 .cursor, .cursor-stationary {
     background-color: #33FF33;
