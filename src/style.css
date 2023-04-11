@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto+Mono:wght@300;400;700&display=swap');
 
 
-@import url('http://use.fontawesome.com/releases/v5.8.2/css/all.css');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 /* Keyframes */
 @keyframes unblur {
@@ -489,7 +489,7 @@ footer {
     align-items: center;
 }
 
-#social-links div {
+#social-links div div {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -689,7 +689,7 @@ footer section article a p {
     }
 }
 
-@media only screen and (max-width:650px) and (min-width:550px) {
+@media only screen and (max-width:650px) and (min-width:600px) {
     #small-screen {
         display: none;
     }
@@ -703,7 +703,7 @@ footer section article a p {
     }
 }
 
-@media only screen and (max-width:500px) and (min-width:550px) {
+@media only screen and (max-width:599px) and (min-width:550px) {
     #wide-screen {
         display: none;
     }
@@ -826,21 +826,29 @@ footer section article a p {
 
 /* Desktop */
 /* Logo sizing */
-@media only screen and (max-width:950px) and (min-width:768px) {
-    header img {
-        max-width: 35%;
-    }
-}
-
-@media only screen and (max-width:1080px) and (min-width:951px) {
+@media only screen and (min-width:768px) {
     header img {
         max-width: 25%;
     }
 }
-
+@media only screen and (min-width:850px) {
+    header img {
+        max-width: 20%;
+    }
+}
+@media only screen and (min-width:950px) {
+    header img {
+        max-width: 18%;
+    }
+}
 @media only screen and (min-width:1081px) {
     header img {
-        max-width: 12%;
+        max-width: 8%;
+    }
+}
+@media only screen and (min-width:1081px) {
+    header img {
+        max-width: 8%;
     }
 }
 
