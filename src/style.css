@@ -413,12 +413,12 @@ main>article {
 
 #project-display>section>div:nth-child(2) {
     animation: border-trace-3 3s ease 2.5s infinite alternate,
-    icon-jump 1s ease infinite alternate;
+    icon-jump 1s ease infinite 2.25s alternate;
 }
 
 #project-display>section>div:last-of-type {
     animation: border-trace 3s ease 2.5s infinite alternate,
-    icon-jump 1s ease infinite alternate;
+    icon-jump 1s ease infinite 2.5s alternate;
 }
 
 .hidden section a:first-of-type {
