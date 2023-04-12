@@ -12,7 +12,6 @@
         filter: blur(0rem) hue-rotate(0deg);
     }
 }
-
 @keyframes display-flip {
     from {
         transform: rotate3d(-10, -1.5, 0, 20deg);
@@ -22,7 +21,6 @@
         transform: rotate3d(0, 0, 0, 0deg);
     }
 }
-
 @keyframes border-trace {
     0% {
         border: 1px solid #33FF33;
@@ -36,30 +34,35 @@
         border: 1px solid #33FF33;
     }
 }
-@keyframes border-trace-2 {
+@keyframes blink {
     0% {
-        border: 1px solid #33FF33;
+        background-color: #33FF33;
+    }
+
+    45% {
+        background-color: #33FF33;
+    }
+
+    50% {
+        background: #282828;
         opacity: 0.7;
     }
-    25% {
-        border: 1px solid #282828;
-        
+
+    95% {
+        background: #282828;
+        opacity: 0.7;
     }
+
     100% {
-        border: 1px solid #33FF33;
+        background-color: #33FF33;
     }
 }
-@keyframes border-trace-3 {
-    0% {
-        border: 1px solid #33FF33;
-        opacity: 0.7;
-    }
-    25% {
-        border: 1px solid #282828;
-        
+@keyframes move-cover { 
+    30% {
+        transform: scaleX(0);
     }
     100% {
-        border: 1px solid #33FF33;
+        transform: scaleX(0);
     }
 }
 @keyframes border-trace-hover {
@@ -78,7 +81,6 @@
         transform: translateY(-0.5rem);
     }
 }
-
 /* General document styles */
 * {
     box-sizing: border-box;
@@ -86,16 +88,13 @@
     padding: 0;
     color: #33FF33;
 }
-
 h1, h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
-
 .terminal-background {
     font-family: 'Roboto Mono', monospace;
 }
-
 body {
     background: #282828;
 }
@@ -413,26 +412,13 @@ main>article {
 }
 
 #project-display>section>div:nth-child(2) {
-    animation: border-trace-3 3s ease 2.5s infinite alternate,
+    animation: border-trace 3s ease 2.5s infinite alternate,
     icon-jump 1s ease infinite 2.25s alternate;
 }
 
 #project-display>section>div:last-of-type {
     animation: border-trace 3s ease 2.5s infinite alternate,
     icon-jump 1s ease infinite 2.5s alternate;
-}
-
-.hidden section a:first-of-type {
-    animation: icon-jump 1s ease infinite alternate;
-}
-.hidden section a:nth-of-type(3) {
-    animation: icon-jump 1s ease 2.25s infinite alternate;
-}
-.hidden section a:nth-of-type(5) {
-    animation: icon-jump 1s ease 2.5s infinite alternate;
-}
-.hidden section a:nth-of-type(7) {
-    animation: icon-jump 1s ease 2.75s infinite alternate;
 }
 /* Main component blog pages */
 main article article h2,
