@@ -1,28 +1,4 @@
 /* Keyframes */
-@keyframes blink {
-    0% {
-        background-color: #33FF33;
-    }
-
-    45% {
-        background-color: #33FF33;
-    }
-
-    50% {
-        background: #282828;
-        opacity: 0.7;
-    }
-
-    95% {
-        background: #282828;
-        opacity: 0.7;
-    }
-
-    100% {
-        background-color: #33FF33;
-    }
-}
-
 @keyframes move {
     30% {
         transform: translateX(5rem);
@@ -33,17 +9,6 @@
     }
 
 }
-
-@keyframes move-cover-about {
-    30% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(0);
-    }
-}
-
 /* "ls about" cursor placement */
 .cmd {
     left: 8.5rem;
@@ -72,7 +37,7 @@
     animation: move 5s linear forwards, blink 0.8s linear infinite;
 }
 .cover-anim {
-    animation: move-cover-about 5s linear forwards;
+    animation: move-cover 5s linear forwards;
 }
 .terminal-background {
     height: 25rem;

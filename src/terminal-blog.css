@@ -1,24 +1,4 @@
 /* Keyframes */
-@keyframes blink {
-    0% {
-        background-color: #33FF33;
-    }
-    45% {
-        background-color: #33FF33;
-    }
-    50% {
-        background: #282828;
-        opacity: 0.7;
-    }
-    95% {
-        background: #282828;
-        opacity: 0.7;
-    }
-    100% {
-        background-color: #33FF33;
-    }
-}
-
 @keyframes move { 
     30% {
         transform: translateX(4rem);
@@ -27,14 +7,6 @@
         transform: translateX(4rem);
     }
 
-}
-@keyframes move-cover-blog { 
-    30% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(0);
-    }
 }
 /* "ls blog" cursor placement */
 .cmd {
@@ -69,7 +41,7 @@
     animation: move 5s linear forwards, blink 0.8s linear infinite;
 }
 .cover-anim {
-    animation: move-cover-blog 5s linear forwards;
+    animation: move-cover 5s linear forwards;
 }
 
 .terminal-background {
