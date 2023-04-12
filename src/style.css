@@ -326,6 +326,10 @@ main>p {
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
+#index-terminal h2 {
+    text-align: center;
+    margin-right: 4rem;
+}
 
 /* About page image and skills list component */
 main>article>section>section>img {
