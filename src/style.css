@@ -5,14 +5,11 @@
 
 /* Keyframes */
 @keyframes unblur {
-    0% {}
-
     50% {
-        filter: blur(0.5) hue-rotate(45deg);
+        filter: blur(0.5rem) hue-rotate(45deg);
     }
-
     100% {
-        filter: blur(0) hue-rotate(0);
+        filter: blur(0rem) hue-rotate(0deg);
     }
 }
 
