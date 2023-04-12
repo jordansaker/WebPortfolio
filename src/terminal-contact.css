@@ -47,14 +47,13 @@
     animation: move-cover 4s linear forwards;
 }
 /* Terminal content */
-.hidden section, main > section {
-    display: flex;
-}
 .hidden section {
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 2.5rem 0;
     margin-left: 1.5rem;
+}
+.hidden section a {
+    display: block;
 }
 .hidden section > div {
     flex-direction: column;
