@@ -30,7 +30,7 @@ The purpose of this website is to provide a platform to display my work, provide
 ![terminal-contact-display](docs/terminal-contact-desktop.png)
 ![blog-post-title](docs/blog-post-title.png)
 ![blog-post](docs/blog-post.png)
-![blog-posts-list](docs/blog-post-list.png)
+![blog-posts-list](docs/blog-posts-list.png)
 ![about-feature-desktop](docs/about-desktop.png)
 
 ##### Mobile screenshots
