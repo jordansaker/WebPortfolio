@@ -14,6 +14,7 @@ The purpose of this website is to provide a platform to display my work, provide
 - Animated terminal display that contains links on each page
 - Terminal animation occurs when terminal is hovered over
 - All hover effects only happen when screen width is greater than 1080px to account for tablet landscape view. So for the terminal feature, the terminal window is collapsed by default when the screen width is less than 1080px
+- Hero image has filter animation apllied to it on load of page
 - Responsive nav bar that collapses the nav links into a hamburger menu when the screen width is less than 650px
 - Project card display that shows completed and/or upcoming projects. The feature is included in the Index and About page. The card display is animated and has a hover effect for applicable screen widths.
 - Social media icons animated
