@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto+Mono:wght@300;400;700&display=swap');
-
-
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 /* Keyframes */
@@ -543,7 +541,7 @@ footer section article a p {
     word-spacing: 0.5rem;
 }
 
-/* Media queries */
+/* *** Media queries *** */
 /* Because of mobile devices not being able to use the hover pseudo class, all hovers will be placed in a media query with a min-width of 1080px (tablet landscape) */
 @media only screen and (min-width: 1081px) {
 
@@ -623,7 +621,6 @@ footer section article a p {
     }
 }
 /* *** TABLET RESPONSE *** */
-
 /* Project Display response */
 @media only screen and (min-width: 760px) {
     #project-display section {
