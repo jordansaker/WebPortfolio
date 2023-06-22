@@ -518,9 +518,6 @@ footer {
 #social-links div nav a:nth-of-type(3) {
     animation: icon-jump 1s ease 2.5s infinite alternate;
 }
-#social-links div nav a:last-of-type {
-    animation: icon-jump 1s ease 2.75s infinite alternate;
-}
 /* Copyright and to top section */
 footer section article {
     display: flex;
