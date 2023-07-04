@@ -303,7 +303,7 @@ main > section > h3 {
 main article section ul {
     flex-direction: column;
     padding: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style-position: inside;
     list-style: symbols(cyclic "> ");
 }
@@ -352,6 +352,11 @@ main>article {
     padding: 3rem 0;
 }
 /* About page Projects Display Component */
+.hero-about {
+    align-items: center;
+    width: 50%;
+    padding: 2.5rem;
+}
 #project-display {
     flex-direction: column;
     align-items: center;

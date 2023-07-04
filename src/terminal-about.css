@@ -70,6 +70,11 @@ main>section,
 .hidden .resume {
     color: #FFBB00;
 }
+
+main article section:first-of-type {
+    justify-content: space-around;
+}
+
 /* Media Queries */
 /* To account for a tablet device used in landscape mode, max width for a tablet will be assumed as 1080 px. The follow media query sets terminal defualt display on mobile devices as follow expanded, with the hover feature only for devices with a pointer. It also only enables other hover features for screens larger than 1080 */
 @media only screen and (min-width:1081px) {
