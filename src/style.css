@@ -241,7 +241,7 @@ main {
 .hero,
 main>article>p {
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .hero,
@@ -377,6 +377,7 @@ main>article {
     background: #33FF33;
     max-width: 22rem;
     text-align: center;
+    font-size: 1.1rem;
     padding-bottom: 1.1rem;
     opacity: 0.7;
     position: relative;
@@ -388,10 +389,6 @@ main>article {
     bottom: 0rem;
     background: #33FF33;
 }
-#project-display>section>div:last-of-type div {
-    border: 1px solid #FFB000;
-    background: #FFB000;
-}
 
 #project-display>section>div>a {
     flex-direction: column;
@@ -399,7 +396,7 @@ main>article {
 
 #project-display>section>div>a>div>p {
     padding: 1.9rem 1.1rem;
-    color: #282828;
+    color: #000000;
     text-align: center;
 }
 
@@ -423,6 +420,43 @@ main>article {
     animation: border-trace 3s ease 2.5s infinite alternate,
     icon-jump 1s ease infinite 2.5s alternate;
 }
+/* About page interests and hobbies */
+main article section:nth-of-type(4) {
+    flex-direction: column;
+}
+
+main article section:nth-of-type(4) p, h2 {
+    padding: 1.2rem;
+}
+
+.hobbies {
+    display: block;
+    width: 100%;
+}
+
+.hobbies img {
+    max-width: 100vw;
+    border-radius: 0;
+}
+
+.hobbies img:first-of-type {
+    margin-top: 1.2rem;
+}
+
+.hobbies video:not(:last-of-type) {
+    height: 240px;
+}
+
+.hobbies video:first-of-type {
+    width: 130px;
+}
+
+.hobbies video:nth-of-type(2) {
+    width: 110px;
+}
+
+
+
 /* Main component blog pages */
 main article article h2,
 main article article p {
@@ -532,7 +566,7 @@ footer section article>p {
 
 footer section article a p {
     padding-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: underline;
     word-spacing: 0.5rem;
