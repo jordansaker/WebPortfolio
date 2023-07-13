@@ -86,7 +86,7 @@
     padding: 0;
     color: #fff;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
@@ -497,7 +497,8 @@ main article article p {
     color: #fff;
 }
 .posts img {
-    width: 100%;
+    width: 35%;
+    object-fit: contain;
 }
 
 .posts article a, .posts {
@@ -696,6 +697,37 @@ footer section article a p {
     }
 }
 /* *** TABLET RESPONSE *** */
+
+/* Figure response */
+@media only screen and (min-width: 700px) {
+    figure {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* More Posts response */
+@media only screen and (min-width: 700px) {
+    .posts {
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .posts article {
+        width: 50%;
+    }
+    .posts article a {
+        margin-left: 5%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+.posts img {
+    width: 25%;
+}
+}
+
 /* Project Display response */
 @media only screen and (min-width: 760px) {
     #project-display section {
@@ -828,9 +860,6 @@ footer section article a p {
 
 /* Index */
 @media only screen and (max-width:767px) and (min-width:481px) {
-    main article p {
-        font-size: 1.4rem;
-    }
 
     /* Footer */
     #social-links p {
