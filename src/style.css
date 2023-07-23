@@ -264,6 +264,40 @@ main article>p {
 
 /* Main content for all pages */
 
+#all-projects > h3 {
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+#all-projects {
+    width: 25rem;
+    margin: 0 auto;
+}
+
+
+#all-projects section article a {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem 0;
+}
+
+#all-projects section article a div:last-child {
+    grid-column: 2 / 4;
+}
+
+#all-projects section article a div p {
+    font-size: 0.8rem;
+}
+
+#all-projects section article a img {
+    object-fit: cover;
+    width: 100%;
+    height: 0;
+    min-height: 100%;
+}
+
 #contact section {
     flex-direction: column;
     border: 1px solid #ffffff80;
@@ -601,7 +635,6 @@ figcaption {
 }
 
 main section section article p {
-    padding: 0 2rem 2rem;
     font-size: 1.25rem;
 }
 
@@ -739,6 +772,7 @@ footer section article a p {
 /* *** TABLET RESPONSE *** */
 
 /* Figure response */
+
 @media only screen and (min-width: 700px) {
     figure {
         width: 70%;
