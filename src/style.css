@@ -239,7 +239,8 @@ main {
 }
 
 .hero,
-main>article>p {
+main>article>p,
+main>article>section {
     padding: 2rem;
     font-size: 1rem;
 }
