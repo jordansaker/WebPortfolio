@@ -446,7 +446,7 @@ main article section:nth-of-type(4) p, h2 {
     pointer-events: none;
 }
 
-.hobbies img:first-of-type {
+.hobbies div {
     margin-top: 1.2rem;
 }
 
@@ -785,10 +785,56 @@ footer section article a p {
 
 /* Hobbies */
 @media only screen and (min-width: 650px) {
-      .hobbies video:not(:last-of-type) {
+      .hobbies div video:not(:last-of-type) {
         height: 29%;
       }
 }
+
+@media only screen and (min-width: 760px) {
+    main article {
+        width: 90%;
+    }
+    .hobbies div img {
+        max-width: 100%;
+        height: 100%;
+    }
+    .hobbies div img:first-of-type {
+        margin-top: 0;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    .hobbies div {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1.5rem
+    }
+    .hobbies div video:first-of-type, .hobbies div video:nth-of-type(3) {
+        min-height: 100%;
+        width: 100%;
+        height: 0;
+        object-fit: cover;
+        object-position: center;
+        margin-left: 0;
+    }
+    .hobbies div video:nth-of-type(2) {
+        object-fit: cover;
+        min-height: 100%;
+        width: 100%;
+        height: 0;
+        object-position: 20% 35%;
+    }
+    .hobbies {
+        margin: 0 auto;
+    }
+    .hobbies div video:last-of-type {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* Hero Image */
 
 @media only screen and (min-width:450px) {
