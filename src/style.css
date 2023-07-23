@@ -441,35 +441,35 @@ main article section:nth-of-type(4) p, h2 {
 }
 
 .hobbies img {
-    max-width: 100vw;
-    border-radius: 0;
-    pointer-events: none;
+    max-width: 100%;
+    /* pointer-events: none; */
+}
+
+.hobbies div img, .hobbies div video:last-of-type {
+    grid-column: 1 / 4;
 }
 
 .hobbies div {
     margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
 }
 
 .hobbies video:not(:last-of-type) {
-    height: 20%;
-}
-.hobbies video:nth-of-type(2) {
-    height: 20%;
+    width: 100%;
 }
 
-.hobbies video:first-of-type, video:nth-of-type(3) {
-    width: 25vw;
-}
-.hobbies video:first-of-type {
-    margin-left: 8vw;
+.hobbies div video:nth-of-type(2), .hobbies div video:nth-of-type(3) {
+    height: 0;
+    object-fit: cover;
+    min-height: 100%;
 }
 
-.hobbies video:nth-of-type(2) {
-    width: 32vw;
-}
 .hobbies video:nth-of-type(4) {
-    width: 250px;
-    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
 }
 .hobbies p, .hobbies ul li {
     font-size: 1rem;
@@ -784,12 +784,6 @@ footer section article a p {
 }
 
 /* Hobbies */
-@media only screen and (min-width: 650px) {
-      .hobbies div video:not(:last-of-type) {
-        height: 29%;
-      }
-}
-
 @media only screen and (min-width: 760px) {
     main article {
         width: 90%;
@@ -797,6 +791,12 @@ footer section article a p {
     .hobbies div img {
         max-width: 100%;
         height: 100%;
+    }
+    /* .hobbies div video:last-of-type, .hobbies div img {
+        grid-column: 1 / 1;
+    } */
+    .hobbies div img, .hobbies div video:last-of-type {
+        grid-column: auto / auto;
     }
     .hobbies div img:first-of-type {
         margin-top: 0;
