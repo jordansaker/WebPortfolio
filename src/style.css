@@ -263,6 +263,27 @@ main article>p {
 }
 
 /* Main content for all pages */
+
+#contact section {
+    flex-direction: column;
+    border: 1px solid #ffffff80;
+    padding: 2rem;
+}
+
+#contact section a {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact section a span, #contact section a p {
+    padding: 1rem;
+}
+
+#contact section a span {
+    font-size: 1.5rem;
+}
+
 main>article>p {
     padding-top: 2rem;
     margin-top: 4rem;
@@ -328,7 +349,7 @@ main>p {
     word-spacing: 0.5rem;
     padding: 0 1.5rem;
 }
-#index-terminal h2 {
+#contact h2 {
     text-align: center;
     margin-right: 4rem;
 }
@@ -819,6 +840,9 @@ footer section article a p {
 
 /* Hobbies */
 @media only screen and (min-width: 760px) {
+    #contact {
+        width: 40%;
+    }
     main article {
         width: 90%;
     }
@@ -941,6 +965,14 @@ footer section article a p {
     /* Footer */
     #social-links p {
         font-size: 1.8rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 950px) {
+    #contact {
+        width: 35%;
     }
 }
 
