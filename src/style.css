@@ -302,7 +302,6 @@ main > section > h3 {
 
 main article section ul {
     flex-direction: column;
-    padding: 0 3rem;
     font-size: 1rem;
     list-style-position: inside;
     list-style: symbols(cyclic "> ");
@@ -811,6 +810,10 @@ footer section article a p {
     }
     main article section:nth-of-type(3) div {
         align-items: center;
+    }
+    main article section ul {
+        justify-content: start;
+        padding: 0 3rem;
     }    
 }
 
@@ -1016,10 +1019,6 @@ footer section article a p {
     main>article>section>section:last-of-type {
         flex-direction: row;
         align-items: center;
-    }
-
-    main article section ul {
-        justify-content: start;
     }
 
     main article figure {
